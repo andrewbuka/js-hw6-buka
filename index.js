@@ -414,6 +414,11 @@ function createBtnCard (position) {
       if (numberFromTotal === 0) {
         btnGreen.textContent = `Your cart - 00.00$`;
       }
+      
+      if (numberFromTotal === 0) {
+        orderLongBtnHeaden.classList.remove('none');
+        orderLongBtn.classList.add('none');
+      }
     };
   
     const btnContainer = createElement('div', ['btn-container-class'], null, null,
